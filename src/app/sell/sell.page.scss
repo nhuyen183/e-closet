@@ -1,0 +1,50 @@
+ion-content {
+    --background: url(/assets/image/SellClothesSC.png) no-repeat center/cover fixed;
+}
+
+ion-content {
+.center-1 {
+    margin-bottom: 00px;
+    margin-top: 150px;
+    margin-left: 40px;
+    width: 25%;
+}
+
+.center-2 {
+    margin-bottom: 100px;
+    margin-top: 150px;
+    margin-left: 100px;
+    margin-right: 50px;
+    width: 25%;
+}}
+
+
+ion-grid {
+   margin-top: 1000px;
+}
+
+// ion-searchbar {
+//     color: orangered;
+//     border-radius: 500px;
+//     margin-top: 0.05px;
+//     margin-bottom: 1000px;
+// }
+
+.center {
+   border: 1px solid grey;
+   width: 90px;
+   height: 90px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.center ion-img {
+   width: 300px;
+   height: 300px;
+}
+
+ion-col {
+   display: flex;
+   justify-content: center;
+}

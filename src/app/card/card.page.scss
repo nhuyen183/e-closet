@@ -1,0 +1,27 @@
+ion-thumbnail {
+    width: 100%;
+    height: 40%;
+    margin: center;
+}
+
+ion-content {
+    --background: url(/assets/image/ProductBuySC.png) no-repeat center/cover fixed;
+
+  }
+
+ion-card {
+    top: 500px;
+        display: flex;
+        flex-direction: column;
+        width: 100% !important;
+        margin: 0 !important;
+        font-weight: 70%;
+        background: transparent;
+}
+
+.center-0 {
+    margin-bottom: 300px;
+    margin-left: 50px;
+    width: 95%;
+    
+}

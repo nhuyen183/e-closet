@@ -1,0 +1,43 @@
+<ion-content [fullscreen]="true">
+
+  
+  <ion-button color ="success" style="width: 30vw; height: 5vw; font-size: 1em;" color="warning" >Add new Mix&Match</ion-button>
+  <ion-icon style="width: 5vw; height: 5vw;" name="camera-outline" class = "custom-icon" ></ion-icon>
+  <ion-fab vertical="top" horizontal="end" slot="fixed" >
+    <ion-button style="width: 10vw; height: 5vw; font-size: 1.5em" color="warning" (click)="moveback()"> Back </ion-button>
+  </ion-fab>
+
+<ion-list>
+  <ion-list-header style="font-size: 1.6em;">
+      Style Of Outfit
+  </ion-list-header>
+
+  <ion-item>
+    <ion-label style="font-size: 1.4em;">Casual</ion-label>
+    <ion-select multiple="true" cancelText="Cancel" okText="Select">
+      <ion-select-option value="Back To School">Back To School</ion-select-option>
+      <ion-select-option value="Office Look">Office Look</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+    <ion-label style="font-size: 1.4em;">Party</ion-label>
+    <ion-select multiple="true" cancelText="Cancel" okText="Select">
+      <ion-select-option value="Hang Out With Friend">Hang Out With Friend</ion-select-option>
+      <ion-select-option value="Wedding">Wedding</ion-select-option>
+      <ion-select-option value="Prom">Prom</ion-select-option>
+      <ion-select-option value="Festival">Festival</ion-select-option>
+    </ion-select>
+  </ion-item>
+</ion-list>
+
+
+<ion-slides [options] = "sliderOpts">
+  <ion-slide *ngFor = "let image of [1, 2, 3]">
+    <img src = "assets/img/{{ image }}.png" tappable (click) = "openPreview(image)">
+
+  </ion-slide>
+  
+</ion-slides>
+
+</ion-content>

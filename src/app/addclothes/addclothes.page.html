@@ -1,0 +1,40 @@
+<ion-content>
+  <ion-fab vertical="top" horizontal="end" slot="fixed" >
+    <ion-button style="width: 10vw; height: 5vw; font-size: 1.5em" color="warning" (click)="moveback()"> Back </ion-button>
+  </ion-fab>
+
+    <div style="display: flex; justify-content: center;">
+         <div class="center">
+           <ion-text color="warning">
+             <h1><p> ADD NEW PRODUCT</p></h1>
+             
+           </ion-text>
+         </div>
+       </div> 
+   
+   <!-- Inputs with labels -->
+   <ion-item style="width: 120vw; height: 10vw; font-size: 2.5em">
+     <ion-label>Product</ion-label>
+     
+     <ion-input></ion-input>
+   </ion-item>
+   
+   <ion-item style="width: 100vw; height: 10vw; font-size: 2.5em">
+     <ion-label position="floating">Price</ion-label>
+     <ion-input></ion-input>
+   </ion-item>
+   
+   <ion-item style="width: 100vw; height: 10vw; font-size: 2.5em">
+     <ion-label>Brand</ion-label>
+     <ion-input></ion-input>
+   </ion-item>
+   
+   <ion-item style="width: 100vw; height: 10vw; font-size: 2.5em">
+     <ion-label position="stacked">Amount</ion-label>
+     <ion-input></ion-input>
+   </ion-item>
+   
+   <ion-button color ="success" style="width: 20vw; height: 20vw; font-size: 2.9em;" (click)="showMessage()">Save</ion-button>
+   <ion-button color="warning" style="width: 20vw; height: 20vw; font-size: 2.9em; display: flex; justify-content: center;">Clear</ion-button>
+  
+</ion-content>

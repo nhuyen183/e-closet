@@ -1,0 +1,38 @@
+<ion-content>
+
+  <ion-fab vertical="top" horizontal="end" slot="fixed" >
+    <ion-button style="width: 10vw; height: 5vw; font-size: 1.5em" color="warning" (click)="moveback()"> Back </ion-button>
+  </ion-fab>
+
+  <ion-button class="b">Messenges</ion-button>
+  <ion-button class="a">Notifications</ion-button>
+  <ion-button class="c">Settings</ion-button>
+  <ion-searchbar showCancelButton="always"></ion-searchbar>
+  <div style="width: 500; height: 20px; display: flex; justify-content: center;">
+      
+    <ion-grid fixed style="width: 600px; height: 1000px; border: 2px solid yellow;">
+      <ion-row>
+        <ion-col size="4">
+          <div class="center">
+            <ion-img src="assets/image/11.png" (click)="moveon()"></ion-img>
+          </div>
+        </ion-col>
+        <ion-col size="4">
+          <div class="center">
+            <ion-img src="assets/image/15.png" (click)="moveon()"></ion-img>
+          </div>
+        </ion-col>
+        <ion-col size="4">
+          <div class="center">
+            <ion-img src="assets/image/16.png" (click)="moveon()"></ion-img>
+          </div>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="4"></ion-col>
+        <ion-col size="4"></ion-col>
+        <ion-col size="4"></ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>

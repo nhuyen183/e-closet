@@ -1,0 +1,13 @@
+<ion-content [fullscreen]="true">
+
+<ion-fab vertical="top" horizontal="end" slot="fixed" >
+    <ion-button color="warning" (click)="moveback()"> Back </ion-button>
+  </ion-fab>
+
+    <ion-slides [options] = "sliderOpts">
+      <ion-slide *ngFor = "let image of [1, 2, 3]">
+        <img src = "assets/image/{{ image }}.png" tappable (click) = "openPreview(image)">
+    
+      </ion-slide>
+    </ion-slides>
+</ion-content>
